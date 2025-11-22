@@ -1,21 +1,11 @@
-#include <stdio.h>
+# Student Grade System (C)
 
-struct Student {
-    char name[50];
-    int score;
-};
+Binary persistence of students and scores.
 
-int main() {
-    struct Student s;
+## Build
+gcc -o student src/main.c src/student.c
 
-    printf("Name: ");
-    scanf("%s", s.name);
+## Run
+./student
 
-    printf("Score: ");
-    scanf("%d", &s.score);
-
-    printf("\nStudent Info:\n");
-    printf("Name: %s\nScore: %d\n", s.name, s.score);
-
-    return 0;
-}
+Exports `students.csv` via menu.
